@@ -9,3 +9,13 @@ install:
   - pip install .
 # command to run tests
 script: me.max604.clienttooth.__init__.py
+
+language: python
+python:
+  - "3.4"
+  - "3.5"
+  - "3.6"
+before_install: cd me/max604/clienttooth
+script:
+
+  - python3 __init__.py
