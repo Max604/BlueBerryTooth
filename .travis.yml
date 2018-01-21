@@ -15,7 +15,6 @@ python:
   - "3.4"
   - "3.5"
   - "3.6"
-before_install: cd me/max604/clienttooth
 script:
-
+  - cd me/max604/clienttooth
   - python3 __init__.py
