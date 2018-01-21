@@ -13,7 +13,9 @@
 **BlueBerryTooth** is a proof-of-concept of the inherent privacy concerns that accompany the use of bluetooth. This project also supports Bluetooth Low Energy devices.
 The idea is set up several _Raspberry Pi Zero W_s as bluetooth device sensors and then transmit the bluetooth packet information received to the server, Raspberry Pi 3 Model B.
 The server will collate the information received from each of the sensors through Wi-Fi TCP on a internet connection and insert this into a MySQL database.
-Packets received will send several important pieces of information: The device's MAC address, the name (if available)
+Packets received will send several important pieces of information: The device's MAC address, the name (if available), the raspberry pi that was used to detect the bluetooth device and the time at which the device was identified.
+With all of this information, the database will tally up where a bluetooth device is found regularly day-to-day in relation to the Raspberry Pi locations. For example, if my Fitbit is always located in the lounge room from 6 to 7 PM each night, the database can will manifest that.
+I hope to maybe create a simple web application that can map out where the bluetooth devices have been located. I haven't decided which indoor positioning method to use yet, triangulation, trilateration or fingerprinting.
 
 # Requirements
 
